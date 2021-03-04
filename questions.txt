@@ -1,0 +1,81 @@
+1. Qual a linguagem de programação mais usada?
+
+a. Python
+->b. JavaScript
+c. Ruby
+d. Java
+
+2. Em HTML, a tag <h pode assumir quantos valores?
+
+->a. 6
+b. infinito
+c. 3
+d. 8
+
+3. Em CSS, em caso de conflito de classes, o que acontece?
+
+a. Nenhuma propriedade é aplicada
+b. As propriedades da primeira classe definida têm prioridade sobre as outras
+->c. As propriedades da última classe definida têm prioridade sobre as outras
+d. Nenhuma das anteriores
+
+4. O que é considerado um "clean design"?
+
+a.um design que o utilizador nota
+b.um design moderno
+c.um design minimalista
+->d. um design que o utilizador não nota 
+
+5. Qual a ferramenta que usada no Figma para mostrarmos que ao clicar num determinado botão vamos ter a uma determinada página?
+
+->a. prototype
+b. connect
+c. draw
+d. animation
+
+6. Qual o output do seguinte programa em Ruby?
+
+nome = :pabu
+p nome.length
+puts nome.upcase!
+
+a. 4pabu
+->b. Erro
+c. 
+4PABU
+d. 
+4
+PABU
+
+7. Qual das afirmações é falsa?
+
+a. Os métodos em Ruby permitem organizar e reutilizar código
+b. O loop seguinte é infinito:
+
+if 1.000 == 1
+	loop {print "Hello World"}
+end
+
+->c. Os valores dos hashes têm que ser únicos, mas as chaves podem ser repetidas
+d. Para iterar hashes são necessários dois placeholders que representem cada par key/value
+
+8. No segundo painel semanal o que foi dito acerca do recrutamento de pessoas sem formação académica?
+
+a. Ainda existe preconceito nas empresas portuguesas
+b. Devemos investir em certificações profissionais para mostrar que temos o conhecimento
+c. Há empresas em Portugal que recrutam pessoas vindas dos bootcamps 
+->d. Todas as anteriores
+
+9. O que faz um full stack developer?
+
+a. trabalha com front end
+b. programa servidores
+->c. trabalha com front end e back end
+d. programa bases de dados
+
+10. (Fazer com o que for ensinado na 6ª)
+
+a.
+b.
+c.
+->d.
