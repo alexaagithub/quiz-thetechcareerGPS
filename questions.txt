@@ -73,9 +73,9 @@ b. programa servidores
 ->c. trabalha com front end e back end
 d. programa bases de dados
 
-10. (Fazer com o que for ensinado na 6ª)
+10. Qual das afirmações seguintes é verdadeira?
 
-a.
-b.
-c.
-->d.
+a. O computador pensa melhor e o ser humano reconhece melhor padrões.
+b. Quanto mais variáveis atribuo ao meu modelo, melhor ele é.
+c. A última etapa do pipeline é o ciclo "train->test->evaluate->adjust"
+->d. A confusion matrix mostra os resultados do testing
