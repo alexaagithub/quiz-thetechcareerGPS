@@ -7,6 +7,8 @@
 	<title>Quiz The Tech Career GPS</title>
 	<meta charset="utf-8">
 
+	<!-- link to social media icons-->
+	<script src="https://kit.fontawesome.com/e2f030911f.js" crossorigin="anonymous"></script>
 	<!-- link to roboto font -->
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap" rel="stylesheet">
@@ -38,159 +40,118 @@
 
 	</div>
 
-	<!--grid layout:10columns, one for each question-->
-	<div class="grid">
-		<div id="quiz1" class="col">
+	<div id="quiz1" class="col">
+		<p class="question"> <span style="font-weight: bold">Q1: </span> Qual a linguagem de programação mais usada? </p>
+		
+		<input type="radio" name="question1" id="txt11" value="Python"> Python<br>
+		<input type="radio" name="question1" id="txt12" value="JavaScript">JavaScript <br>
+		<input type="radio" name="question1" id="txt13" value="Ruby"> Ruby <br>
+		<input type="radio" name="question1" id="txt14" value="Java"> Java<br>
+		<button class="submit" style="border:none;" value="PROXIMA " onclick="prox2()">Próxima</button>
 
-			<p class="question"> <span style="font-weight: bold">Q1: </span>
-				Qual a linguagem de programação mais usada?
-			</p>
-			<input type="radio" name="question1" id="txt11" value="Python"> Python<br>
-			<input type="radio" name="question1" id="txt12" value="JavaScript">JavaScript <br>
-			<input type="radio" name="question1" id="txt13" value="Ruby"> Ruby <br>
-			<input type="radio" name="question1" id="txt14" value="Java"> Java<br>
-			<button class="submit" style="border:none;" value="PROXIMA " onclick="prox2()">Próxima</button>
+	</div>
+	<div id="quiz2" class="col">
+		<p  class="question"> <span style="font-weight: bold">Q2: </span> Em HTML, a tag &#60h pode assumir quantos valores?</p>
+		
+		<input type="radio" name="question2" id="txt21" value="6"> 6<br>
+		<input type="radio" name="question2" id="txt22" value="Infinito">Infinito <br>
+		<input type="radio" name="question2" id="txt23" value="3"> 3 <br>
+		<input type="radio" name="question2" id="txt24" value="8"> 8<br>
+		<button class="submit" style="border:none;" value="PROXIMA " onclick="prox3()">Próxima</button>
 
-		</div>
-		<div id="quiz2" class="col2 col">
-			<p  class="question"> <span style="font-weight: bold">Q2: </span>
-				Em HTML, a tag &#60h pode assumir quantos valores?
-			</p>
-			<input type="radio" name="question2" id="txt21" value="6"> 6<br>
-			<input type="radio" name="question2" id="txt22" value="Infinito">Infinito <br>
-			<input type="radio" name="question2" id="txt23" value="3"> 3 <br>
-			<input type="radio" name="question2" id="txt24" value="8"> 8<br>
-			<button class="submit" style="border:none;" value="PROXIMA " onclick="prox3()">Próxima</button>
-
-		</div>
-		<div id="quiz3" class="col3 col">
-			<p  class="question"> <span style="font-weight: bold">Q3: </span>
-				Em CSS, em caso de conflito de classes, o que acontece?
-			</p>
-			<input type="radio" name="question3" id="txt31" value="Nenhuma propriedade é aplicada">Nenhuma propriedade é
+	</div>
+	<div id="quiz3" class="col">
+		<p  class="question"> <span style="font-weight: bold">Q3: </span> Em CSS, em caso de conflito de classes, o que acontece?</p>
+		
+		<input type="radio" name="question3" id="txt31" value="Nenhuma propriedade é aplicada">Nenhuma propriedade é
 			aplicada <br>
-			<input type="radio" name="question3" id="txt32"
-				value="As propriedades da primeira classe definida têm prioridade sobre as outras">As propriedades da
+		<input type="radio" name="question3" id="txt32" value="As propriedades da primeira classe definida têm prioridade sobre as outras">As propriedades da
 			primeira classe definida têm prioridade sobre as outras <br>
-			<input type="radio" name="question3" id="txt33"
-				value="As propriedades da última classe definida têm prioridade sobre as outras"> As propriedades da
+		<input type="radio" name="question3" id="txt33" value="As propriedades da última classe definida têm prioridade sobre as outras"> As propriedades da
 			última classe definida têm prioridade sobre as outras <br>
-			<input type="radio" name="question3" id="txt34" value="Nenhuma das anteriores">Nenhuma das anteriores <br>
-			<button class="submit" style="border:none;" value="PROXIMA " onclick="prox4()">Próxima</button>
+		<input type="radio" name="question3" id="txt34" value="Nenhuma das anteriores">Nenhuma das anteriores <br>
+		<button class="submit" style="border:none;" value="PROXIMA " onclick="prox4()">Próxima</button>
 
-		</div>
-		<div id="quiz4" class="col4 col">
-			<p class="question"> <span style="font-weight: bold">Q4: </span>
-				O que é considerado um "clean design"?
-			</p>
-			<input type="radio" name="question4" id="txt41" value="Design que o utilizador nota"> Design que o
-			utilizador nota<br>
-			<input type="radio" name="question4" id="txt42" value="Design Moderno"> Design Moderno <br>
-			<input type="radio" name="question4" id="txt43" value="Design minimalista"> Design minimalista <br>
-			<input type="radio" name="question4" id="txt44" value="Design que o utilizador não nota">Design que o
-			utilizador não nota <br>
-			<button class="submit" style="border:none;" value="PROXIMA " onclick="prox5()">Próxima</button>
+	</div>
+	<div id="quiz4" class="col">
+		<p class="question"> <span style="font-weight: bold">Q4: </span> O que é considerado um "clean design"?</p>
+			
+		<input type="radio" name="question4" id="txt41" value="Design que o utilizador nota">Design que o utilizador nota<br>
+		<input type="radio" name="question4" id="txt42" value="Design Moderno"> Design Moderno <br>
+		<input type="radio" name="question4" id="txt43" value="Design minimalista"> Design minimalista <br>
+		<input type="radio" name="question4" id="txt44" value="Design que o utilizador não nota">Design que o utilizador não nota <br>
+		<button class="submit" style="border:none;" value="PROXIMA " onclick="prox5()">Próxima</button>
 
-		</div>
-		<div id="quiz5" class="col5 col">
-			<p class="question"> <span style="font-weight: bold">Q5: </span>
-				Qual a ferramenta usada no Figma para mostrarmos que ao clicar num determinado botão vamos ter a uma
-				determinada página?
-			</p>
-			<input type="radio" name="question5" id="txt51" value="Prototype">Prototype <br>
-			<input type="radio" name="question5" id="txt52" value="Connect">Connect <br>
-			<input type="radio" name="question5" id="txt53" value="Draw">Draw <br>
-			<input type="radio" name="question5" id="txt54" value="Animation">Animation <br>
-			<button class="submit" style="border:none;" value="PROXIMA " onclick="prox6()">Próxima</button>
+	</div>
+	<div id="quiz5" class="col">
+		<p class="question"> <span style="font-weight: bold">Q5: </span> Qual a ferramenta usada no Figma para mostrarmos que ao clicar num determinado botão vamos ter a uma determinada página?</p>
 
-		</div>
-		<div id="quiz6" class="col6 col">
-			<p class="question"> <span style="font-weight: bold">Q6: </span> Qual o output do seguinte programa em
-				Ruby?<br>
-				<code class="code">
-						nome = :pabu <br>
-						p nome.length <br>
-						puts nome.upcase!
-					</code>
-			</p>
+		<input type="radio" name="question5" id="txt51" value="Prototype">Prototype <br>
+		<input type="radio" name="question5" id="txt52" value="Connect">Connect <br>
+		<input type="radio" name="question5" id="txt53" value="Draw">Draw <br>
+		<input type="radio" name="question5" id="txt54" value="Animation">Animation <br>
+		<button class="submit" style="border:none;" value="PROXIMA " onclick="prox6()">Próxima</button>
 
-			<input type="radio" name="question6" id="txt61" value="4pabu">4pabu<br>
-			<input type="radio" name="question6" id="txt62" value="Erro"> Erro <br>
-			<input type="radio" name="question6" id="txt63" value="4PABU"> 4PABU <br>
-			<input type="radio" name="question6" id="txt64" value="4PABU">4 <br> PABU <br>
-			<button class="submit" style="border:none;" value="PROXIMA " onclick="prox7()">Próxima</button>
+	</div>
+	<div id="quiz6" class="col">
+		<p class="question"> <span style="font-weight: bold">Q6: </span> Qual o output do seguinte programa em Ruby?<br>
+			<code class="code">
+				nome = :pabu <br>
+				p nome.length <br>
+				puts nome.upcase!
+			</code>
+		</p>
 
-		</div>
-		<div id="quiz7" class="col7 col">
-			<p class="question"> <span style="font-weight: bold">Q7: </span>
-				Qual das afirmações é falsa?
-			</p>
-			<input type="radio" name="question7" id="txt71"
-				value="Os métodos em Ruby permitem organizar e reutilizar código"> Os métodos em Ruby permitem organizar
-			e reutilizar código<br>
-			<input type="radio" name="question7" id="txt72" value="O loop seguinte é infinito:">O loop seguinte é
-			infinito:
+		<input type="radio" name="question6" id="txt61" value="4pabu">4pabu<br>
+		<input type="radio" name="question6" id="txt62" value="Erro"> Erro <br>
+		<input type="radio" name="question6" id="txt63" value="4PABU"> 4PABU <br>
+		<input type="radio" name="question6" id="txt64" value="4PABU">4 <br> PABU <br>
+		<button class="submit" style="border:none;" value="PROXIMA " onclick="prox7()">Próxima</button>
 
+	</div>
+	<div id="quiz7" class="col">
+		<p class="question"> <span style="font-weight: bold">Q7: </span> Qual das afirmações é falsa? </p>
+			
+		<input type="radio" name="question7" id="txt71" value="Os métodos em Ruby permitem organizar e reutilizar código"> Os métodos em Ruby permitem organizar e reutilizar código<br>
+		<input type="radio" name="question7" id="txt72" value="O loop seguinte é infinito:">O loop seguinte é infinito:
 			if 1.000 == 1
 			loop {print "Hello World"}
 			end <br>
-			<input type="radio" name="question7" id="txt73"
-				value="Os valores dos hashes têm que ser únicos, mas as chaves podem ser repetidas">Os valores dos
-			hashes têm que ser únicos, mas as chaves podem ser repetidas <br>
-			<input type="radio" name="question7" id="txt74"
-				value="Para iterar hashes são necessários dois placeholders que representem cada par key/value">Para
-			iterar hashes são necessários dois placeholders que representem cada par key/value <br>
-			<button class="submit" style="border:none;" value="PROXIMA " onclick="prox8()">Próxima</button>
+		<input type="radio" name="question7" id="txt73" value="Os valores dos hashes têm que ser únicos, mas as chaves podem ser repetidas">Os valores dos hashes têm que ser únicos, mas as chaves podem ser repetidas <br>
+		<input type="radio" name="question7" id="txt74" value="Para iterar hashes são necessários dois placeholders que representem cada par key/value">Para iterar hashes são necessários dois placeholders que representem cada par key/value <br>
+		<button class="submit" style="border:none;" value="PROXIMA " onclick="prox8()">Próxima</button>
 
-		</div>
-		<div id="quiz8" class="col8 col">
-			<p class="question"> <span style="font-weight: bold">Q8: </span>
-				No segundo painel semanal o que foi dito acerca do recrutamento de pessoas sem formação académica? </p>
-			<input type="radio" name="question8" id="txt81"
-				value="Ainda existe preconceito nas empresas portuguesas">Ainda existe preconceito nas empresas
-			portuguesas <br>
-			<input type="radio" name="question8" id="txt82"
-				value="Devemos investir em certificações profissionais para mostrar que temos o conhecimento">Devemos
-			investir em certificações profissionais para mostrar que temos o conhecimento <br>
-			<input type="radio" name="question8" id="txt83"
-				value="Há empresas em Portugal que recrutam pessoas vindas dos bootcamps"> Há empresas em Portugal que
-			recrutam pessoas vindas dos bootcamps <br>
-			<input type="radio" name="question8" id="txt84" value="Todas as anteriores">Todas as anteriores <br>
-			<button class="submit" style="border:none;" value="PROXIMA " onclick="prox9()">Próxima</button>
+	</div>
+	<div id="quiz8" class="col">
+		<p class="question"> <span style="font-weight: bold">Q8: </span> No segundo painel semanal o que foi dito acerca do recrutamento de pessoas sem formação académica? </p>
 
-		</div>
-		<div id="quiz9" class="col9 col">
-			<p class="question"> <span style="font-weight: bold">Q9: </span>
-				O que faz um full stack developer? </p>
-			<input type="radio" name="question9" id="txt91" value="trabalha com front end">trabalha com front end<br>
-			<input type="radio" name="question9" id="txt92" value="Programa servidores">Programa servidores <br>
-			<input type="radio" name="question9" id="txt93" value="Trabalha com front end e back end">Trabalha com front
-			end e back end <br>
-			<input type="radio" name="question9" id="txt94" value="Programa bases de dados">Programa bases de dados <br>
-			<button class="submit" style="border:none;" value="PROXIMA " onclick="prox10()">Próxima</button>
+		<input type="radio" name="question8" id="txt81" value="Ainda existe preconceito nas empresas portuguesas">Ainda existe preconceito nas empresas portuguesas <br>
+		<input type="radio" name="question8" id="txt82" value="Devemos investir em certificações profissionais para mostrar que temos o conhecimento">Devemos investir em certificações profissionais para mostrar que temos o conhecimento <br>
+		<input type="radio" name="question8" id="txt83" value="Há empresas em Portugal que recrutam pessoas vindas dos bootcamps"> Há empresas em Portugal que recrutam pessoas vindas dos bootcamps <br>
+		<input type="radio" name="question8" id="txt84" value="Todas as anteriores">Todas as anteriores <br>
+		<button class="submit" style="border:none;" value="PROXIMA " onclick="prox9()">Próxima</button>
 
-		</div>
-		<div id="quiz10" class="col10 col">
-			<p class="question"> <span style="font-weight: bold">Q10: </span>Qual das afirmações seguintes é verdadeira? </p>
-				<input type="radio" name="question10" id="txt101"
-				value="O computador pensa melhor e o ser humano reconhece melhor padrões.">O computador pensa melhor e o
-			ser
-			humano reconhece melhor padrões.<br>
-			<input type="radio" name="question10" id="txt102"
-				value="Quanto mais variáveis atribuo ao meu modelo, melhor ele é.">Quanto mais variáveis atribuo ao meu
-			modelo, melhor ele é.<br>
-			<input type="radio" name="question10" id="txt103"
-				value="A última etapa do pipeline é o ciclo 'train->test->evaluate->adjust' ">A última etapa do pipeline
-			é o
-			ciclo "train->test->evaluate->adjust"<br>
-			<input type="radio" name="question10" id="txt104"
-				value="A confusion matrix mostra os resultados do testing.">A
-			confusion matrix mostra os resultados do testing.<br>
-
-			<br>
-			<p>10 de 10 </p>
+	</div>
+	<div id="quiz9" class="col">
+		<p class="question"> <span style="font-weight: bold">Q9: </span> O que faz um full stack developer? </p>
 			
-		</div>
+		<input type="radio" name="question9" id="txt91" value="trabalha com front end">trabalha com front end<br>
+		<input type="radio" name="question9" id="txt92" value="Programa servidores">Programa servidores <br>
+		<input type="radio" name="question9" id="txt93" value="Trabalha com front end e back end">Trabalha com front end e back end <br>
+		<input type="radio" name="question9" id="txt94" value="Programa bases de dados">Programa bases de dados <br>
+		<button class="submit" style="border:none;" value="PROXIMA " onclick="prox10()">Próxima</button>
+
+	</div>
+	<div id="quiz10" class="col">
+		<p class="question"> <span style="font-weight: bold">Q10: </span>Qual das afirmações seguintes é verdadeira? </p>
+				
+		<input type="radio" name="question10" id="txt101" value="O computador pensa melhor e o ser humano reconhece melhor padrões.">O computador pensa melhor e o ser humano reconhece melhor padrões.<br>
+		<input type="radio" name="question10" id="txt102" value="Quanto mais variáveis atribuo ao meu modelo, melhor ele é.">Quanto mais variáveis atribuo ao meu modelo, melhor ele é.<br>
+		<input type="radio" name="question10" id="txt103" value="A última etapa do pipeline é o ciclo 'train->test->evaluate->adjust' ">A última etapa do pipeline é o ciclo "train->test->evaluate->adjust"<br>
+		<input type="radio" name="question10" id="txt104" value="A confusion matrix mostra os resultados do testing.">A confusion matrix mostra os resultados do testing.<br>
+		<br>
+		<p>10 de 10 </p>
+	</div>
 
 
 		<!--button to submit-->
@@ -208,9 +169,12 @@
 
 	<!--authors-->
 	<div class="attribution">
-		<p>Criado por <a href="https://www.linkedin.com/in/laisa-lamir-b9858215b/" target="_blanck">Laissa Lamir</a> e
-			<a href="https://www.linkedin.com/in/alexandra-pardal/" target="_blanck">Alexandra Pardal</a>
-		</p>
+		<p>Criado por Laissa Lamir e Alexandra Pardal</p>
+		<a href="https://github.com/laisalamir" target="_blanck"><i class="fab fa-github-square social_icons"></i></a>
+		<a href="https://www.linkedin.com/in/laisa-lamir-b9858215b/" target="_blanck"><i class="fab fa-linkedin social_icons"></i></a>
+
+		<a href="https://github.com/alexaagithub" target="_blanck"><i class="fab fa-github-square social_icons"></i></a>
+		<a href="https://www.linkedin.com/in/alexandra-pardal/" target="_blanck"><i class="fab fa-linkedin social_icons"></i></a>
 
 	</div>
 
