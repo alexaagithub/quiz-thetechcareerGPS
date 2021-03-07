@@ -1,5 +1,3 @@
-
-
 body{
 	background-color: #F3DE4D;
 	font-family: 'Roboto', sans-serif;
@@ -16,12 +14,8 @@ h1 {
 
 }
 
-.icon, .submeter, .icons {
-	visibility: hidden;
-}
-
- #regras, #quiz1, #quiz2, #quiz3, #quiz4, #quiz5, #quiz6, #quiz7, #quiz8, #quiz9, #quiz10, #mostrar, #contatos  {
-    visibility: hidden;
+#quiz1, #quiz2, #quiz3, #quiz4, #quiz5, #quiz6, #quiz7, #quiz8, #quiz9, #quiz10, #mostrar  {
+    visibility: hidden
        
   }
 
@@ -34,91 +28,6 @@ h1 {
 	text-align: center;
 	font-weight: 700;
 }
-
-#regras{
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	background-color: #E6BD00;
-	border-radius: 26px;
-	text-align:center;
-	
-}
-
-.time{
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	width: 145px;
-	height:45px;
-	background-color: #059FBF;
-	border: 1px solid #b8b8b8;
-	border-radius: 5px;
-	padding: 0 8px;
-}
-
-.time .time_text{
-	font-weight: 400;
-	font-size: 17px;
-	user-select: none;
-}
-.time .time_sec{
-	font-size: 18px;
-	font-weight: 500;
-	background: red;
-	height: 30px;
-	width: 45px;
-	color: white;
-	text-align: center;
-	line-height: 30px;
-	border-radius: 5px;
-	border-radius: 1px solid #343a40;
-}
-.option_list .option{
-	background: #F3DE4D;
-	border: 1px solid black;
-	border-radius: 5px;
-	padding: 8px 15px;
-	margin-bottom: 15px;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	cursor: pointer;
-	transition: all 0.3s ease;
-}
-.option_list .option:last-child{
-	margin-bottom: 0px;
-}
-.option_list .option:hover{
-	color: #BF3D05;
-	background: #343a40;
-	border-color: #000000;
-}
-
-.option_list .option .icon{
-    height: 26px;
-    width: 26px;
-	border: 2px solid transparent;
-	border-radius: 50%;
-	font-size: 13px;
-	line-height: 24px;
-	pointer-events: none;
-}
-
-.option_list .option .icon.tick{
-	color:#1ac53f ;
-	border-color: #1ac53f;
-	background: #b8b8b8;
-	text-align: center;
-}
-.option_list .option .icon.cross{
-	border-color: #fd1807;
-	color: #fd1807;
-	background: #b8b8b8;
-	text-align: center;
-}
-.option_list .option .disabled{
-	pointer-events: none;
-}
-
 
 /*grid layout->questions*/
 .grid{
@@ -180,19 +89,10 @@ h1 {
 
 }
 
-.contatos{
-	display: flex;
-	align-items: center;
-	padding: 8 15px;
-}
-
-
 .code{
 	vertical-align: middle;
 	text-align: center;
 
+
 }
-
-
-
 
