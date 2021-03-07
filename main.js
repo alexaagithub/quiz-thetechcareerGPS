@@ -1,52 +1,94 @@
-function prox1() {
+function rules() {
     document.getElementById("start").style.display = "none";
-    document.getElementById("quiz1").style.visibility = "visible";
+    document.getElementById("regras").style.visibility = "visible";
+}
+
+function prox1() {
+    document.getElementById("regras").style.visibility = "none";
+    document.getElementById("quiz1").style.display = "visible";  
+   
 }
 
 function prox2() {
     document.getElementById("quiz1").style.display = "none";
     document.getElementById("quiz2").style.visibility = "visible";
+    
 }
 
 function prox3() {
     document.getElementById("quiz2").style.display = "none";
     document.getElementById("quiz3").style.visibility = "visible";
+    
 }
 
 function prox4() {
     document.getElementById("quiz3").style.display = "none";
     document.getElementById("quiz4").style.visibility = "visible";
+    
 }
 
 function prox5() {
     document.getElementById("quiz4").style.display = "none";
     document.getElementById("quiz5").style.visibility = "visible";
+    
 }
 
 function prox6() {
     document.getElementById("quiz5").style.display = "none";
     document.getElementById("quiz6").style.visibility = "visible";
+    
 }
 
 function prox7() {
     document.getElementById("quiz6").style.display = "none";
     document.getElementById("quiz7").style.visibility = "visible";
+    
 }
 
 function prox8() {
     document.getElementById("quiz7").style.display = "none";
     document.getElementById("quiz8").style.visibility = "visible";
+    
 }
 
 function prox9() {
     document.getElementById("quiz8").style.display = "none";
     document.getElementById("quiz9").style.visibility = "visible";
+    
 }
 
 function prox10() {
     document.getElementById("quiz9").style.display = "none";
     document.getElementById("quiz10").style.visibility = "visible";
+    
 }
+
+function optionSelected(this){
+   document.getElementsByClassName('icons').style.visibility = "visible";
+   document.getElementsByClassName('icons').style= "disabled";
+   startTime(15);
+}
+
+let timeCount = document.querySelector(".time .time_sec");
+let next_btn = document.querySelectorAll(".next_btn");
+let counter;
+let timeValue = 15;
+function startTimer(time){
+    counter = setInterval(timer, 1000);
+    function timer(){
+        timeCount.textContent = time;
+        time--;
+        if(timer > 0){
+            clearInterval(counter);
+            timeCount.textContent = "00";
+        }
+    }
+}
+next_btn.onclick = () => {
+    clearInterval(counter);
+    startTimer(timeValue);
+}
+
 
 
 function terminei() {
@@ -134,15 +176,17 @@ function terminei() {
         console.log('Wrong Answer')
         wrong++;
     }
-    if (question10?.value === "fd") {
+    if (question10?.value === "A confusion matrix mostra os resultados do testing.") {
         console.log('Correct Answer')
         correct++;
     } else {
         console.log('Wrong Answer')
         wrong++;
     }
-
+    
     document.getElementById("mostrar").style.visibility = "visible";
-    document.getElementById("certa").innerHTML += `<p>${correct} Acertos.</p>`;
-    document.getElementById("errada").innerHTML += `<p>${wrong} Erros.</p>`;
+    document.getElementById("contatos").style.visibility = "visible";
+    document.getElementById("certa").innerHTML += `<p>
+    ACERTOU ${correct} / 10</p>`;
+    /*document.getElementById("errada").innerHTML += `<p>${wrong} Erros.</p>`;*/
 }
