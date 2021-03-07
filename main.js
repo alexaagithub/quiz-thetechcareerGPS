@@ -47,6 +47,7 @@ function prox9() {
 function prox10() {
     document.getElementById("quiz9").style.display = "none";
     document.getElementById("quiz10").style.visibility = "visible";
+    document.getElementById("submeter").style.visibility = "visible";
 }
 
 
@@ -135,7 +136,7 @@ function terminei() {
         console.log('Wrong Answer')
         wrong++;
     }
-    if (question10?.value === "fd") {
+    if (question10?.value === "A confusion matrix mostra os resultados do testing.") {
         console.log('Correct Answer')
         correct++;
     } else {

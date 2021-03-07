@@ -14,9 +14,12 @@ h1 {
 
 }
 
-#quiz1, #quiz2, #quiz3, #quiz4, #quiz5, #quiz6, #quiz7, #quiz8, #quiz9, #quiz10, #mostrar  {
+#quiz1, #quiz2, #quiz3, #quiz4, #quiz5, #quiz6, #quiz7, #quiz8, #quiz9, #quiz10, #mostrar, #submeter  {
     visibility: hidden
        
+  }
+  .question1 {
+	  text-align: left;
   }
 
 
